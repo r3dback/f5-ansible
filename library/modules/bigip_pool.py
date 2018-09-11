@@ -178,7 +178,7 @@ EXAMPLES = r'''
   delegate_to: localhost
 
 - name: Add pool member
-  bigip_pool_member:
+  bigip_pool:
     server: lb.mydomain.com
     user: admin
     password: secret
@@ -244,7 +244,7 @@ EXAMPLES = r'''
   delegate_to: localhost
 
 - name: Remove pool member from pool
-  bigip_pool_member:
+  bigip_pool:
     server: lb.mydomain.com
     user: admin
     password: secret
